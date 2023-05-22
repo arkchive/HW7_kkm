@@ -11,7 +11,7 @@ def main():
     det = np.linalg.det(arr)
 
     print('Eigenvalues:', w)
-    print('Eigenvectors:', v)
+    print('Eigenvectors:\n', v)
     print('Determinant:', det)
 
     vec1 = [1, 2, 3]
@@ -20,9 +20,9 @@ def main():
     print('Cross Product:', np.cross(vec1, vec2))
 
     a = np.array([[1, 2, -2], [2, 1, -5], [1, -4, 1]])
-    b = np.array([-15, -21, 18])
+    b = np.array([[-15], [-21], [18]])
     x = np.linalg.solve(a, b)
-    print('Solution:', x)
+    print('Solution:\n', x)
 
 if __name__ == '__main__':
     main()
